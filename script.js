@@ -23,18 +23,25 @@ function multiples() {
 }
 
 function oddNum() {
-    for(let n = 11; n<= 55; n+=2) {
+    for(let n = 55; n >= 11; n -= 2) {
         console.log(n)
     }
 }
 
 function calcSum50() {
-    let total = 50/2 * (50 + 1);
-    console.log("The sum of all integers to 50 is:" + total);
+    let total = 0
+    for(let num = 5; num <= 50; num++) {
+        total += num
+    }
+    
+    console.log("The sum of all integers to 50 starting at 5:" + total);
 }
 
 function calcSum100() {
-    let total = 100/2 * (100 + 1);
-    console.log("The sum of all integers to 100 is:" + total);
+    let total = 0
+    for (let num = 10; num <= 100; num+= 10) {
+        total += num
+    }
+    console.log("The sum of all integers to 100 (counting by 10):" + total);
 }
 
